@@ -1,0 +1,9 @@
+.progress-bar__scale_pressure {
+    background: radial-gradient(
+        50% 9453.13% at 50% 50%,
+        var(--netural-tone-700) 0%,
+        rgba(138, 138, 138, 0.4) 45.12%,
+        var(--netural-filled-200) 100%,
+        var(--netural-tone-200) 100%
+    );
+}

@@ -1,0 +1,4 @@
+.slider-container__btn.slider-container__btn_inactive {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

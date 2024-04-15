@@ -1,0 +1,19 @@
+.future-time-forecast {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 32px;
+    flex: 0 0 100%;
+}
+
+@media (max-width: 1023px) {
+    .future-time-forecast {
+        row-gap: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .future-time-forecast {
+        row-gap: 16px;
+    }
+}

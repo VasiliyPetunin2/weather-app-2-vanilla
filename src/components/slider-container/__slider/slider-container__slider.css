@@ -1,0 +1,19 @@
+.slider-container__slider {
+    display: flex;
+    flex-flow: row nowrap;
+    transition: transform 0.5s ease;
+    column-gap: 16px;
+    mask-image: linear-gradient(to right, black 90%, transparent);
+}
+
+@media (max-width: 1023px) {
+    .slider-container__slider {
+        column-gap: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-container__slider {
+        column-gap: 8px;
+    }
+}

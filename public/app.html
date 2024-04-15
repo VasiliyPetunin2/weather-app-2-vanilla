@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../src/styles/main.css" />
+        <script defer type="module" src="../src/main.js"></script>
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="/public/app.html">
+                    <picture>
+                        <source
+                            media="(max-width: 1023px)"
+                            srcset="../src/assets/images/logoMini.svg"
+                            type="image/svg+xml"
+                        />
+                        <img src="../src/assets/images/logo.svg" alt="Изображение логотипа" class="logo" />
+                    </picture>
+                </a>
+                <form class="search-location">
+                    <div class="input-search">
+                        <input type="search" placeholder="Поиск по городу" class="input-search__input" />
+                        <button class="input-search__cancel-button">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M4.65041 5.95141C4.2912 5.59221 4.29119 5.00983 4.65039 4.65062C5.00958 4.29141 5.59197 4.2914 5.95118 4.65059L19.3496 18.0485C19.7088 18.4077 19.7088 18.9901 19.3496 19.3493C18.9904 19.7085 18.408 19.7086 18.0488 19.3494L4.65041 5.95141Z"
+                                    fill="#545454"
+                                    stroke="#545454"
+                                    stroke-width="0.5"
+                                />
+                                <path
+                                    d="M4.6509 19.3496C4.29169 18.9904 4.29168 18.408 4.65087 18.0488L18.0488 4.6504C18.408 4.29119 18.9904 4.29118 19.3496 4.65038C19.7088 5.00957 19.7088 5.59196 19.3496 5.95117L5.95169 19.3496C5.59249 19.7088 5.01011 19.7088 4.6509 19.3496Z"
+                                    fill="#545454"
+                                    stroke="#545454"
+                                    stroke-width="0.5"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </header>
+            <main>
+                <section class="real-time-forecast-main-info">
+                    <p class="real-time-forecast-main-info__location">Кременчуг-константиновское</p>
+                    <p class="real-time-forecast-main-info__date">Суббота, 06 января</p>
+                    <p class="real-time-forecast-main-info__time">Получаем время...</p>
+                    <p class="real-time-forecast-main-info__temperature">-7°</p>
+                    <figure class="real-time-forecast-main-info__precipitation">
+                        <img src="../src/assets/images/brokenCloudDay.svg" alt="Осадки" />
+                        <figcaption class="real-time-forecast-main-info__precipitation-description">
+                            Облачно с прояснениями
+                        </figcaption>
+                    </figure>
+                    <p class="real-time-forecast-main-info__feels-like">Ощущается как -11°</p>
+                </section>
+                <section class="real-time-forecast-additional-info">
+                    <article class="real-time-forecast-additional-info-card">
+                        <h3 class="real-time-forecast-additional-info-card__title">Влажность</h3>
+                        <img src="../src/assets/images/humidity.svg" alt="Изображение влажности" />
+                        <p class="real-time-forecast-additional-info-card__value"><span id="humidityValue"></span> %</p>
+                        <div class="progress-bar" id="progressBarHumidity">
+                            <div class="progress-bar__scale"></div>
+                            <div class="progress-bar__icon"></div>
+                            <div class="progress-bar__wrapper">
+                                <span class="progress-bar__reference-point">0%</span>
+                                <span class="progress-bar__reference-point">100%</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="real-time-forecast-additional-info-card">
+                        <h3 class="real-time-forecast-additional-info-card__title">Давление</h3>
+                        <img src="../src/assets/images/barometr.svg" alt="Изображение барометра" />
+                        <p class="real-time-forecast-additional-info-card__value" id="pressureValue"></p>
+                        <div class="progress-bar" id="progressBarPressure">
+                            <div class="progress-bar__scale progress-bar__scale_pressure"></div>
+                            <div class="progress-bar__icon"></div>
+                        </div>
+                        <p class="real-time-forecast-additional-info-card__additional-value" id="pressureDegree"></p>
+                    </article>
+                    <article class="real-time-forecast-additional-info-card">
+                        <h3 class="real-time-forecast-additional-info-card__title">Видимость</h3>
+                        <img src="../src/assets/images/visibility.svg" alt="Изображение видимости" />
+                        <p class="real-time-forecast-additional-info-card__value">
+                            <span id="visibilityValue"></span> км
+                        </p>
+                        <div class="progress-bar" id="progressBarVisibility">
+                            <div class="progress-bar__scale"></div>
+                            <div class="progress-bar__icon"></div>
+                        </div>
+                        <p class="real-time-forecast-additional-info-card__additional-value" id="visibilityDegree"></p>
+                    </article>
+                    <article class="real-time-forecast-additional-info-card">
+                        <h3 class="real-time-forecast-additional-info-card__title">Рассвет</h3>
+                        <img src="../src/assets/images/sunrise.svg" alt="Изображение рассвета" />
+                        <p class="real-time-forecast-additional-info-card__value" id="sunshineValue"></p>
+                        <p class="real-time-forecast-additional-info-card__additional-value">
+                            Прошло:
+                            <span id="timePassedSinceSunshine">Считаем...</span>
+                        </p>
+                    </article>
+                    <article class="real-time-forecast-additional-info-card">
+                        <h3 class="real-time-forecast-additional-info-card__title">Закат</h3>
+                        <img src="../src/assets/images/sunset.svg" alt="Изображение заката" />
+                        <p class="real-time-forecast-additional-info-card__value" id="sunsetValue"></p>
+                        <p class="real-time-forecast-additional-info-card__additional-value">
+                            Осталось: <span id="timeUntilSunset">Считаем...</span>
+                        </p>
+                    </article>
+                    <article class="real-time-forecast-additional-info-card">
+                        <h3 class="real-time-forecast-additional-info-card__title">Сила ветра</h3>
+                        <img src="../src/assets/images/windDirection.svg" alt="Изображение направления ветра" />
+                        <p class="real-time-forecast-additional-info-card__value">
+                            <span id="windSpeedValue"></span> м/с
+                        </p>
+                        <p class="real-time-forecast-additional-info-card__additional-value" id="windDirection"></p>
+                    </article>
+                </section>
+                <section class="future-time-forecast">
+                    <nav class="future-time-forecast-navigation">
+                        <h3 class="future-time-forecast-navigation__title">Прогноз:</h3>
+                        <button class="future-time-forecast-navigation__forecast-type" id="hourlyForecast">
+                            на 24 часа
+                        </button>
+                        <button
+                            class="future-time-forecast-navigation__forecast-type future-time-forecast-navigation__forecast-type_active"
+                            id="weeklyForecast"
+                        >
+                            на 5 дней
+                        </button>
+                    </nav>
+                    <div class="slider-container">
+                        <button class="slider-container__btn slider-container__btn_inactive" id="previousSlideBtn">
+                            <img src="../src/assets/images/chevron.svg" alt="Изображение кнопки назад" />
+                        </button>
+                        <div class="slider-container__wrapper">
+                            <div class="slider-container__slider"></div>
+                        </div>
+                        <button class="slider-container__btn" id="nextSlideBtn">
+                            <img src="../src/assets/images/chevron.svg" alt="Изображение кнопки вперёд" />
+                        </button>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p class="footer-text-info">
+                    Проект выполнен в рамках стажировки
+                    <a href="https://preax.ru" class="footer-text-info__link" target="_blank">PREAX</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

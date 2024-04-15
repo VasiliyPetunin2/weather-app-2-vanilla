@@ -1,0 +1,78 @@
+@import url("normalize.css");
+@import url("rawline.css");
+@import url("root.css");
+@import url("../components/container/container.css");
+@import url("../components/logo/logo.css");
+@import url("../components/search-location/search-location.css");
+@import url("../components/input-search/input-search.css");
+@import url("../components/real-time-forecast-main-info/real-time-forecast-main-info.css");
+@import url("../components/real-time-forecast-additional-info/real-time-forecast-additional-info.css");
+@import url("../components/real-time-forecast-additional-info-card/real-time-forecast-additional-info-card.css");
+@import url("../components/progress-bar/progress-bar.css");
+@import url("../components/future-time-forecast/future-time-forecast.css");
+@import url("../components/future-time-forecast-navigation/future-time-forecast-navigation.css");
+@import url("../components/slider-container/slider-container.css");
+@import url("../components/slide/slide.css");
+@import url("../components/footer-text-info/footer-text-info.css");
+
+body {
+    min-width: 375px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../public/Main.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    padding: 32px 80px;
+    font-family: var(--font-family);
+}
+
+header,
+main {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    flex-flow: row wrap;
+    row-gap: 64px;
+    column-gap: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 1279px) {
+    body {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 1023px) {
+    body {
+        padding: 24px;
+    }
+
+    main {
+        flex-flow: column nowrap;
+        row-gap: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 16px;
+    }
+
+    main {
+        row-gap: 32px;
+    }
+}

@@ -1,0 +1,26 @@
+.real-time-forecast-additional-info {
+    min-width: 506px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 158px);
+    grid-auto-rows: 196px;
+    justify-content: end;
+    gap: 16px;
+    flex: 1;
+}
+
+@media (max-width: 1023px) {
+    .real-time-forecast-additional-info {
+        min-width: 0;
+        grid-template-columns: repeat(3, 163px);
+        gap: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .real-time-forecast-additional-info {
+        grid-template-columns: repeat(3, minmax(98px, 128px));
+        grid-auto-rows: 148px;
+        gap: 8px;
+        justify-content: center;
+    }
+}

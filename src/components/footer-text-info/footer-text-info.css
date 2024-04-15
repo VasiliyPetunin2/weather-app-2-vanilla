@@ -1,0 +1,17 @@
+@import url("./__link/footer-text-info__link.css");
+
+.footer-text-info {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--netural-filled-100);
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .footer-text-info {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

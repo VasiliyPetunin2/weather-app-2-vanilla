@@ -1,0 +1,16 @@
+.real-time-forecast-additional-info-card__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--netural-filled-900);
+    margin: 0 0 16px 0;
+}
+
+@media (max-width: 767px) {
+    .real-time-forecast-additional-info-card__title {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0 0 12px 0;
+    }
+}

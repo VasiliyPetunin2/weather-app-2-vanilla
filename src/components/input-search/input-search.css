@@ -1,0 +1,6 @@
+@import url("__cancel-button/input-search__cancel-button.css");
+@import url("__input/input-search__input.css");
+
+.input-search {
+    width: 100%;
+}

@@ -1,0 +1,15 @@
+@import url("./_pressure/progress-bar__scale_pressure.css");
+
+.progress-bar__scale {
+    width: 100%;
+    height: 8px;
+    background-color: var(--netural-tone-200);
+    border-radius: 15px;
+    mask: radial-gradient(circle at 0%, transparent 7px, black 5px);
+}
+
+@media (max-width: 767px) {
+    .progress-bar__scale {
+        height: 6px;
+    }
+}

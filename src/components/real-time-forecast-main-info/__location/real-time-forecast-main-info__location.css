@@ -1,0 +1,22 @@
+.real-time-forecast-main-info__location {
+    color: var(--netural-filled-100);
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0px 0 4px 0;
+}
+
+@media (max-width: 1023px) {
+    .real-time-forecast-main-info__location {
+        margin: 0 0 3px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .real-time-forecast-main-info__location {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 2px 0;
+    }
+}

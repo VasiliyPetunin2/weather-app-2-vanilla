@@ -1,0 +1,27 @@
+@import url("./_inactive/slider-container__btn_inactive.css");
+
+.slider-container__btn {
+    max-height: 48px;
+    border-radius: 8px;
+    padding: 10px 16px;
+    background-color: var(--netural-tone-100);
+    border: none;
+    cursor: pointer;
+}
+
+#previousSlideBtn {
+    transform: rotate(-180deg);
+}
+
+@media (max-width: 767px) {
+    .slider-container__btn {
+        width: 40px;
+        height: 32px;
+        padding: 8px 12px;
+    }
+
+    .slider-container__btn img {
+        width: 16px;
+        height: 16px;
+    }
+}

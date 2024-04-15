@@ -1,0 +1,12 @@
+.future-time-forecast-navigation__forecast-type.future-time-forecast-navigation__forecast-type_active {
+    color: var(--netural-filled-100);
+    border-bottom: 2px solid var(--netural-filled-100);
+    padding-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    .future-time-forecast-navigation__forecast-type.future-time-forecast-navigation__forecast-type_active {
+        border-bottom: 1px solid var(--netural-filled-100);
+        padding-bottom: 2px;
+    }
+}

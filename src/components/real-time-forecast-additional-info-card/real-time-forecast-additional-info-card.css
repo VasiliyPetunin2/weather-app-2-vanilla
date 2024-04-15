@@ -1,0 +1,24 @@
+@import url("./__title/real-time-forecast-additional-info-card__title.css");
+@import url("./__value/real-time-forecast-additional-info-card__value.css");
+@import url("./__additional-value/real-time-forecast-additional-info-card__additional-value.css");
+
+.real-time-forecast-additional-info-card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--netural-tone-100);
+    padding: 16px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .real-time-forecast-additional-info-card {
+        padding: 12px;
+    }
+
+    .real-time-forecast-additional-info-card img {
+        width: 24px;
+        height: 24px;
+    }
+}

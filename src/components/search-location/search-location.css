@@ -1,0 +1,23 @@
+.search-location {
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .search-location {
+        width: 506px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 1023px) {
+    .search-location {
+        margin-left: 135px;
+    }
+}
+
+@media (max-width: 639px) {
+    .search-location {
+        margin-left: 16px;
+    }
+}

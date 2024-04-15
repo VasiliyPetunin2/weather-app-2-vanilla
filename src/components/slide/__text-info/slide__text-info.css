@@ -1,0 +1,15 @@
+.slide__text-info {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--netural-filled-900);
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .slide__text-info {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

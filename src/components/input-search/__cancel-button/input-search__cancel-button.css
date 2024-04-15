@@ -1,0 +1,28 @@
+@import url("_handle-appearance/input-search__cancel-button_handle-appearance.css");
+
+.input-search__cancel-button {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-search__cancel-button:hover svg {
+    fill: rgb(32, 32, 32);
+}
+
+@media (max-width: 767px) {
+    .input-search__cancel-button {
+        top: 8px;
+        right: 8px;
+    }
+
+    .input-search__cancel-button svg {
+        width: 16px;
+        height: 16px;
+    }
+}

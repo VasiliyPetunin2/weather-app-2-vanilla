@@ -1,0 +1,24 @@
+.real-time-forecast-main-info__precipitation {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 8px;
+    margin: 0 0 4px 0;
+}
+
+@media (max-width: 1023px) {
+    .real-time-forecast-main-info__precipitation {
+        margin: 0 0 3px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .real-time-forecast-main-info__precipitation img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .real-time-forecast-main-info__precipitation {
+        margin: 0 0 2px 0;
+    }
+}

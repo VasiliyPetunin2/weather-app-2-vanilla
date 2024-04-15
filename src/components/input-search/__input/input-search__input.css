@@ -1,0 +1,46 @@
+@import url("_handle-icon/input-search__input_handle-icon.css");
+
+.input-search__input {
+    position: relative;
+    width: 100%;
+    padding: 12px 56px 12px 16px;
+    color: var(--netural-filled-900);
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+    background-image: url("../../../assets/images/magnifierIcon.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-color: var(--netural-tone-100);
+    outline: none;
+    transition: background-color 0.5s;
+}
+
+.input-search__input:hover {
+    background-color: var(--netural-filled-200);
+}
+
+.input-search__input:focus {
+    background-color: var(--netural-filled-200);
+}
+
+.input-search__input::placeholder {
+    color: var(--netural-filled-600);
+}
+
+.input-search__input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+@media (max-width: 767px) {
+    .input-search__input {
+        font-size: 14px;
+        line-height: 1.14286;
+        padding: 8px 40px 8px 12px;
+        background-size: 16px 16px;
+    }
+}

@@ -1,0 +1,15 @@
+.progress-bar__reference-point {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33333;
+    color: var(--netural-filled-800);
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .progress-bar__reference-point {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}

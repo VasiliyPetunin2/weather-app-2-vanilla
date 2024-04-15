@@ -1,0 +1,10 @@
+@import url("./__scale/progress-bar__scale.css");
+@import url("./__icon/progress-bar__icon.css");
+@import url("./__reference-point/progress-bar__reference-point.css");
+@import url("./__wrapper/progress-bar__wrapper.css");
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+}

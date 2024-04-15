@@ -1,0 +1,33 @@
+.real-time-forecast-main-info__temperature {
+    color: var(--netural-filled-100);
+    font-family: var(--font-family);
+    font-size: 112px;
+    font-weight: 700;
+    line-height: 112px;
+    margin: 64px 0;
+}
+
+@media (max-width: 1279px) {
+    .real-time-forecast-main-info__temperature {
+        margin: 48px 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    .real-time-forecast-main-info__temperature {
+        margin: 24px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .real-time-forecast-main-info__temperature {
+        margin: 16px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .real-time-forecast-main-info__temperature {
+        font-size: 56px;
+        line-height: 56px;
+    }
+}

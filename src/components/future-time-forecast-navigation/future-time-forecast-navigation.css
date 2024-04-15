@@ -1,0 +1,21 @@
+@import url("./__title/future-time-forecast-navigation__title.css");
+@import url("./__forecast-type/future-time-forecast-navigation__forecast-type.css");
+
+.future-time-forecast-navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    column-gap: 32px;
+}
+
+@media (max-width: 1023px) {
+    .future-time-forecast-navigation {
+        column-gap: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .future-time-forecast-navigation {
+        column-gap: 16px;
+    }
+}

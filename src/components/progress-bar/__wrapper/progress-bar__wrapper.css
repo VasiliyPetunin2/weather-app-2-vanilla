@@ -1,0 +1,7 @@
+.progress-bar__wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 8px;
+}

@@ -1,0 +1,17 @@
+.progress-bar__icon {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: var(--netural-filled-100);
+    border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+    .progress-bar__icon {
+        width: 6px;
+        height: 6px;
+    }
+}

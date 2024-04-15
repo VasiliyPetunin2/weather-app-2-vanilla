@@ -1,0 +1,24 @@
+@import url("__location/real-time-forecast-main-info__location.css");
+@import url("__date/real-time-forecast-main-info__date.css");
+@import url("__time/real-time-forecast-main-info__time.css");
+@import url("__temperature/real-time-forecast-main-info__temperature.css");
+@import url("__precipitation/real-time-forecast-main-info__precipitation.css");
+@import url("__precipitation-description/real-time-forecast-main-info__precipitation-description.css");
+@import url("__feels-like/real-time-forecast-main-info__feels-like.css");
+
+.real-time-forecast-main-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex: 1;
+    padding: 0 40.5px;
+    text-align: center;
+}
+
+@media (max-width: 1023px) {
+    .real-time-forecast-main-info {
+        padding: 0;
+    }
+}

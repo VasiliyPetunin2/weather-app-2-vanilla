@@ -1,0 +1,45 @@
+@import url("./__precipitation/slide__precipitation.css");
+@import url("./__text-info/slide__text-info.css");
+
+.slide {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: 8px;
+    padding: 16px;
+    background: var(--netural-tone-100);
+    gap: 16px;
+    flex: 0 0 auto;
+    animation-name: appearance;
+    animation-duration: 0.5s;
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 885px) {
+    .slide {
+        flex-flow: column nowrap;
+    }
+}
+
+@media (max-width: 767px) {
+    .slide {
+        flex-flow: row nowrap;
+        padding: 12px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 639px) {
+    .slide {
+        flex-flow: column nowrap;
+    }
+}
