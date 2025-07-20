@@ -7,8 +7,8 @@
 
 ## Установка и запуск
 1. Скачиваем исходный код локально с помощью кнопки **"Code"** в интерфейсе GH и предпочтитаемого способа из трёх (HTTPS, SSH, GitHub CLI):  
-1.1 `https://github.com/VasiliyPetunin2/quiz-app-react.git`  
-1.2 `git@github.com:VasiliyPetunin2/quiz-app-react.git`  
-1.3 `gh repo clone VasiliyPetunin2/quiz-app-react`
+1.1 `https://github.com/VasiliyPetunin2/weather-app-2-vanilla.git`  
+1.2 `git@github.com:VasiliyPetunin2/weather-app-2-vanilla.git`  
+1.3 `gh repo clone VasiliyPetunin2/weather-app-2-vanilla`
 2. Запускаем проект на локальном сервере, например, с помощью **VS Code**:  
 2.1 [Инструкция по разворачиванию проекта на локальном сервере через **VS Code**](https://code-you.org/students/resources/guides/install-live-server-in-vs-code/)
