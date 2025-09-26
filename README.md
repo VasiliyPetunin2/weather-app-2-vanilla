@@ -12,3 +12,6 @@
 1.3 `gh repo clone VasiliyPetunin2/weather-app-2-vanilla`
 2. Запускаем проект на локальном сервере, например, с помощью **VS Code**:  
 2.1 [Инструкция по разворачиванию проекта на локальном сервере через **VS Code**](https://code-you.org/students/resources/guides/install-live-server-in-vs-code/)
+
+## Ознакомление с демо
+Посмотреть демо можно вот [тут](https://weather-app-2-vanilla.vercel.app/)
